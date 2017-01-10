@@ -1,0 +1,38 @@
+a:hover {
+    cursor: pointer
+}
+html,body{
+    background-color:#222222;
+}
+label{
+    color: #ffffff
+}
+.jumbotron{
+    background-color: #444444;  
+}
+.title{
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+hr{
+    width: 95%;
+    height: 1px;
+    margin: 0.5em auto;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0.4em;
+  background-color: #444444;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 800px){
+    .jumbotron{
+        margin: 0 45px 0 45px;
+    }
+}

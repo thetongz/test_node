@@ -1,0 +1,31 @@
+doctype
+html( lang="en" )
+    head
+        title Baking Bootstrap Snippets with Jade
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+        //- Bootswatch Theme
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+        
+        
+    body(style="padding-bottom:10rem;")
+        .container
+
+        - var ob = JSON.parse(json)
+        - for(var prop in ob)
+            p #{prop}: #{ob[prop].name}
+
+        form(action="/newuser" , method="post")
+            div.form-group
+                label name
+                input.form-control(type="name", name="name" , placeholder="name")
+            div.form-group
+                label password
+                input.form-control(type="password", name="pwd" , placeholder="password")
+            div.form-group
+                input.btn.btn-default(type="submit", value="Submit")
+        
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
